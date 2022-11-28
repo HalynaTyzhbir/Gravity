@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gravity</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          class="logo"
+          src="./img/logo.svg"
+          alt="logo"
+          width="79"
+          height="25"
+        />
+        <nav class="menu">
+          <ul class="menu-list" data-menu>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Features</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Pricing</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Why Gravity</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button" data-menu-button>
+          <svg class="icon" width="12" height="12">
+            <use
+              class="icon-menu"
+              xlink:href="./img/sprite.svg#icon-menu"
+            ></use>
+          </svg>
+          Menu
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="info">
+            <div>
+              <picture class="picture-wrap">
+                <source
+                  srcset="./img/desktop-Illustration.png"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 617px"
+                />
+                <img
+                  class="illustration"
+                  src="./img/mob-Illustration.png"
+                  alt="illustration"
+                  width="308"
+                />
+              </picture>
+            </div>
+            <div class="wrap">
+              <h2 class="info-title">
+                Simple time tracking. Powerful reporting.
+              </h2>
+              <p class="info-text">
+                Turn your team on to productivity with Gravity the time tracker.
+              </p>
+              <a class="info-link" href="#">Request early access</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./menu.js"></script>
+  </body>
+</html>

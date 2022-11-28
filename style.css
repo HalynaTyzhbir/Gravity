@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sfprodisplay/sfprodisplay-regular-1-webfont.woff2")
+      format("woff2"),
+    url("../fonts/sfprodisplay/sfprodisplay-regular-1-webfont.woff")
+      format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sfprodisplay/sfprodisplay-medium-webfont.woff2")
+      format(woff2),
+    url("../fonts/sfprodisplay/sfprodisplay-medium-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sfprodisplay/sfprodisplay-bold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/sfprodisplay/sfprodisplay-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  font-family: "SF Pro Display", "Arial", "Helvetica", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #22322f;
+}
+
+.container {
+  max-width: 432px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 60px;
+}
+
+.header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767.5px) {
+  .menu-list {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    height: calc(100vh - 100px);
+    padding: 100px 20px 30px;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    list-style: none;
+  }
+
+  .menu-list.is-open {
+    display: block;
+  }
+
+  .menu-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.menu-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #303031;
+  text-decoration: none;
+
+  transition: color 300ms linear;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #71a89e;
+}
+
+.button {
+  min-height: 39px;
+  min-width: 99px;
+
+  background-color: #f9f9f9;
+  border-color: #22322f;
+  border-radius: 8px;
+  border-width: 1px 2px 2px 1px;
+  border-style: solid;
+
+  font-family: "SF Pro Display", "Arial", "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+}
+
+.intro {
+  padding: 45px 0;
+}
+
+.info-title {
+  font-size: 27px;
+  margin-bottom: 16px;
+}
+
+.info-text {
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.info-link {
+  display: inline-block;
+  max-width: 155px;
+  padding: 10px 24px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-width: 1px 2px 2px 1px;
+  border-radius: 8px;
+
+  font-weight: 700;
+  line-height: 1.5;
+  color: #22322f;
+  text-decoration: none;
+
+  transition: color 300ms linear, background-color 300ms linear;
+}
+
+.info-link:hover,
+.info-link:focus {
+  color: #ffffff;
+  background-color: #71a89e;
+}
+
+.illustration {
+  display: block;
+  width: 100%;
+}
+
+.wrap {
+  max-width: 314px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 648px;
+    padding: 0 60px;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+
+  .menu-link {
+    font-size: 20px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .logo {
+    width: 138px;
+    height: 43px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 752px;
+    padding: 0 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 120px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    padding: 97px 0;
+  }
+
+  .wrap {
+    max-width: 551px;
+  }
+
+  .info-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .info-text {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+
+  .info-link {
+    max-width: 175px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
